@@ -113,6 +113,35 @@ https://learn.microsoft.com/en-us/purview/sit-get-started-exact-data-match-based
 
 ---------------------------------------------------------------------------------
 ## Trainable classifiers
+
+With a Microsoft 365 trainable classifier, you can train it to recognize different types of content by giving it samples to examine. It can be used to identify items for application of Office sensitivity labels, Communications compliance policies, and retention labels. 
+
+To create a custom trainable classifier, it is necessary to provide it with samples that are selected by a human and are positively correlated with the category. Following the processing of the positive matched samples, you test the classifier's ability to predict by presenting it with both positive and negative samples. 
+
+The following permissions are required to access classifiers in the UI: 
+- For the tenant to be able to create custom classifiers, the Global Admin must grant permission. 
+- To train a classifier, a Compliance Administrator role is required. 
+
+Classifiers can only be used in these scenarios with accounts that have the following permissions: 
+- Retention label policy: Record Management and Retention Management roles 
+- Sensitivity label policy: Security Administrator, Compliance Administrator, Compliance Data Administrator 
+- Communication compliance policy: Insider Risk Management Admin, Supervisory Review Administrator 
+
+Important note!
+- A custom classifier can be trained and reviewed only by the user who created it.
+
+Timeline:
+- Trainable classifiers may take about a month to deploy.
+
+Seed Content:
+- Seed content is chosen by a human and is judged to represent the category of content.
+- A minimum of 50 positive samples and up to 500 are required
+- A trainable classifier will process up to 500 samples created recently (based on the file creation date and time stamp). 
+- More samples will enable the classifier (ML model) to make more accurate predictions.
+
+Trainable Classifiers- visit Microsoft doc for more info.
+https://learn.microsoft.com/en-us/purview/trainable-classifiers-get-started-with
+
 ---------------------------------------------------------------------------------
 ## Data explorer & content explorer for monitoring data classification
 ---------------------------------------------------------------------------------
