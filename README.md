@@ -36,6 +36,6 @@ Platform Overview
 - ### Section 5: Using Insider Risk Management in Microsoft Purview
   -
   - 
-- ### Section 7: Using alert monitoring and protecting data used by AI services
+- ### Section 6: Using alert monitoring and protecting data used by AI services
   -
   -
