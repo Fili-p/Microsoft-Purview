@@ -76,6 +76,41 @@ https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting
 
 ---------------------------------------------------------------------------------
 ## Exact data match (EDM) classifiers
+
+Used to create highly precise, customized, and secure classification rules for sensitive data protection. Applies to structured data such as employee IDs, patient records, customer databases, etc. - to prevent data leaks, enforce compliance and DLP.
+
+Microsoft Purview > Information Protection > Classifiers > EDM classifiers
+
+\+ Create EDM classifier
+
+	1. Name your classifier
+		- Name: John Doe Credit Card Info
+		- Description: John Doe Credit Card Info
+	2. Define the schema
+		- Two options: Upload a file (sample data) or Manually define data structure
+			- Upload a file then review sample data for accuracy
+		- Select primary elements
+			- Credit Card Number
+		- Configure settings for data in selected columns
+			- Read through and check all that apply
+			- For more info visit - https://go.microsoft.com/fwlink/?linkid=2196225
+	3. Specify detection rules
+		- For more info visit - https://learn.microsoft.com/en-us/purview/sit-get-started-exact-data-match-create-rule-package
+	4. Review and submit
+
+<img width="956" height="757" alt="image" src="https://github.com/user-attachments/assets/185085ee-a0ae-4c89-8f9b-34c5ddeeef01" />
+
+May take up to a few days until available for deployment in large environments.
+
+Test results
+
+<img width="1111" height="733" alt="image" src="https://github.com/user-attachments/assets/d034de87-9e94-4e56-98fb-e90734d667f1" />
+
+-
+
+EDM STI - visit Microsoft doc for more info.
+https://learn.microsoft.com/en-us/purview/sit-get-started-exact-data-match-based-sits-overview
+
 ---------------------------------------------------------------------------------
 ## Trainable classifiers
 ---------------------------------------------------------------------------------
