@@ -157,8 +157,45 @@ Microsoft Purview > Information Protection > Explorers
 
 ---------------------------------------------------------------------------------
 ## Sensitive info types (STI) with Optical character recognition (OCR)
+
+Example use case - scan PDF files for sensitive information. Supported locations includes Echange, SharePoint sites, OneDrive accounts, Teams chat and channel messages, and Devices.
+
+Perquisite: pay-as-you-go subscription - https://learn.microsoft.com/en-us/purview/ocr-cost-estimator
+
+Cost Estimate: $1.00 for every 1,000 items scanned. (Each page is scanned separately - 10 pages in a PDF file will count as 10 separate scans).
+
+To enable OCR: Microsoft Purview > Settings > Optical character recognition (OCR)
+
+Optical character recognition in Microsoft Purview - https://learn.microsoft.com/en-us/purview/ocr-learn-about
+
 ---------------------------------------------------------------------------------
 ## Sensitivity labels
+
+A label identifies classification information regardless of where the data is stored or who has access to it. Labels may include visual markers such as a header, footer, or watermark.
+
+The process of using labels is as follows:
+- Admin: creates a sensitivity label, and publishes the label to users and groups selected in a label policy.
+- End user: labels documents with available labels.
+- Office or third-party app/service: enforces protection settings on the email or document according to the labels that have been applied.
+	
+The sensitivity label is like a stamp that is applied to content and is: 
+- Customizable: Depending on the organization's needs and sensitive content level, you can create categories. For example, Personal, Public, General, Confidential, and Highly Confidential.
+- Clear text: As labels are stored in clear text in the metadata of files and emails, third-party apps and services can read them and take appropriate protective measures.
+- Persistent: In the case of files and emails, the label is stored within the metadata, so it travels with the content, regardless of where the content is stored. This allows to apply and enforce policies based on unique label identification.
+
+In the event that a sensitivity label is applied to an email or document, any protection settings configured for that label will be enforced on its content. The following options can be configured for a sensitivity label: 
+- Protect data by encrypting emails and documents. It is also possible to restrict what actions users or groups are allowed to perform, as well as for how long. 
+- Mark the content of an email or document by adding a watermark, header, or footer when using Office apps. Emails cannot be watermarked.
+
+<img width="1279" height="720" alt="image" src="https://github.com/user-attachments/assets/7afe2f8a-f534-42ec-8615-0e5c21084d02" />
+<img width="1279" height="720" alt="image" src="https://github.com/user-attachments/assets/55b70f4a-bdce-48e1-a90f-eb45707489b4" />
+
+### Microsoft Purview > Settings > Roles and scopes 
+
+Microsoft Entra ID: List of existing roles and assigned users.
+
+Role groups: is where you assign users to a role. There are a number of built-in roles, with predefined permissions. Can also create a new role.
+
 ---------------------------------------------------------------------------------
 ## Creating sensitivity labels
 ---------------------------------------------------------------------------------
