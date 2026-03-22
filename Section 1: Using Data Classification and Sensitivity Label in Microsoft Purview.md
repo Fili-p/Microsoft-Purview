@@ -144,6 +144,17 @@ https://learn.microsoft.com/en-us/purview/trainable-classifiers-get-started-with
 
 ---------------------------------------------------------------------------------
 ## Data explorer & content explorer for monitoring data classification
+
+Microsoft Purview > Information Protection > Explorers
+
+- Data Explorer: helps users review information classified as sensitive as data is ingested. Initially, data may be sparse but will grow as users engage with the labelling process.
+- Activity Explorer: records actions performed by users, can be filtering by date and specific actions.
+
+
+### Microsoft Purview > Settings > Data Connectors
+
+- Data Connectors: enable ingestion of data from various sources into Microsoft 365. This integration, including from third-party applications like Salesforce, enhances the functionality of monitoring tools.
+
 ---------------------------------------------------------------------------------
 ## Sensitive info types (STI) with Optical character recognition (OCR)
 ---------------------------------------------------------------------------------
