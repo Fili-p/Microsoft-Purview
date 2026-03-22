@@ -198,10 +198,159 @@ Role groups: is where you assign users to a role. There are a number of built-in
 
 ---------------------------------------------------------------------------------
 ## Creating sensitivity labels
+
+Microsoft Purview > Information Protection > Sensitivity labels
+
+\+ Create > Label
+
+	1. Label details
+		- Name: Top Secret Data
+		- Display Name (name users see) - Top Secret Data
+		- Label priority - default (can be changed after)
+		- Description for users: Top Secret Data
+		- Description for admins: Top Secret Data
+		- Label color: Red
+	2. Scope - where the label is going to be available
+		- Default:
+			- Files & other data assets (Microsoft 365, Fabrics includes Power BI, Azure)
+			- Emails (Outlook)
+			- Meetings (Outlook schedules & Teams)
+			- Group & sites - not enabled in my test env
+	3. Item - protection settings
+		- Options include:
+			- Control access
+			- Apply content marking
+			- Protect Teams meetings and chats - not enabled in my test env
+		○ Access Control
+			- Assign permission or let user decide
+			- User access to content
+			- Allow Offline access
+			- Assign permissions to specific users or groups
+				- Choose permissions
+			- Optional: Watermarking & Double Key Encryption
+		- Auto-labeling for files and emails: on/off
+	4. Groups & sites - protection settings
+		- Privacy and external user access
+		- External sharing and Conditional Access
+		- Private teams discoverability and sharing channel settings
+	5. Finish
+		- Publish label to user' apps
+		- Don’t Create a policy yet 
+
+<img width="1995" height="657" alt="image" src="https://github.com/user-attachments/assets/7e0c7476-71da-4598-9161-b14645b88846" />
+
+\
+
+Take note of priority number (higher number = higher priority) as this is auto applied and can be changed.
+
+Lean about sensitivity label - https://learn.microsoft.com/en-us/purview/sensitivity-labels
+
 ---------------------------------------------------------------------------------
 ## Publishing Sensitivity labels
+
+Microsoft Purview > Information Protection > Sensitivity labels
+
+Choose the Sensitivity label and select > Publish label
+
+	1. Labels to publish
+		- Select labels to publish - Edit
+	2. Admin units
+		- If no specific admin unit is assigned click next to assign to all users and groups.
+		- https://learn.microsoft.com/en-us/purview/purview-admin-units
+			- Microsoft Entra ID - create an administrative unit 
+	3. Users units
+		- Select users and groups - make label available  
+	4. Settings
+		- Options:
+			- Users must provide a justification to remove a label or lower its classification
+			- Require users to apply a label to their emails and documents
+			- Require users to apply a label to their Fabric and Power BI content
+			- Provide users with a link to a custom help page 
+		- Documents
+			- Choose auto applied label
+		- Emails
+			- Choose auto applied label
+			- Inherit label from attachments (highest priority applies automatically)
+		- Meetings
+			- Choose auto applied label
+			- Inherit label from artifacts  - will replace the meeting's label (highest priority applies automatically)
+		- Fabric and Power BI
+			- Choose auto applied label
+	5. Name
+		- Name: Top Secret Data Publishing Policy
+		- Description: 
+	6. Finish
+		
+
+May take 24 hours to deploy. 
+
+To see the published labels:
+Microsoft Purview > Information Protection > Policies > Label publishing policies
+
+<img width="2555" height="578" alt="image" src="https://github.com/user-attachments/assets/c149a2c2-58e2-4b6d-aa7d-676686b83b5f" />
+
+Label view in a Word file (Top Secret Data) -  that’s where users will apply labels.
+
+<img width="1530" height="372" alt="image" src="https://github.com/user-attachments/assets/b937a2d9-8962-43e9-8e92-54c5df40107b" />
+
+Lean more about labels - https://learn.microsoft.com/en-us/purview/create-sensitivity-labels?tabs=classic-label-scheme
+
 ---------------------------------------------------------------------------------
 ## Auto-labeling policies for sensitive labels
+
+Will auto match data in M365 such as files and emails when the data matches conditions specified.
+
+
+Microsoft Purview > Information Protection > Sensitivity labels
+
+Check box of the Sensitivity label and select > Create auto-labeling policy
+
+	1. Name
+		- Name: Top Secret Data auto-labeling policy
+		- Description: 
+	2. Label
+		- Choose label to auto-apply
+	3. Admin unit
+		- Assign admin unit (units are created in Microsoft Entra ID)
+		- Click next to assign policy to all users and groups
+	4. Location
+		- Options
+			- Exchange email
+			- SharePoint sites
+			- OneDrive accounts
+		- Each option can be further edited to apply to specific users and groups. Default is all users.
+	5. Policy rules
+		- Choose one option:
+			- Common rules: applies the same rules to all three location defined in the previous step.
+			- Advanced rules: allows for different rules to be set for each location.
+		
+		- Common rule > New rule
+				- Name: Social Security Numbers
+				- Description: 
+			- Add Conditions > Content contains (more options are available):
+				- Group name: SSN
+				- Add > Sensitive info types (can add multiple STIs)
+					- U.S. Social Security Number (SSN)
+						- Define confidence and instances to find
+			- Can also add exceptions (for certain things to ignore)
+		- Additional label settings:
+			- Email only - replace existing labels
+			- All locations (purview) - replace existing labels
+			- Apply encryption to email received from outside your organization
+	6. Policy mode
+		- Test now or later
+			- Run policy in simulation mode - will gather items that match but labels won't be applied, until reviewed by a human to decide if the policy works as needed or policy requires further refinement.
+				- Auto turn on after 7 day if not modified (optional)
+			- Leave policy turned off
+	7. Finish
+
+May take 24 to 48 hours to deploy.
+
+<img width="773" height="1015" alt="image" src="https://github.com/user-attachments/assets/2786f810-15a9-4b3c-856f-154b1ae24c35" />
+
+Lean more about auto-labeling:
+https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically?tabs=apply-label
+
 ---------------------------------------------------------------------------------
 ## Monitoring label usage
 ---------------------------------------------------------------------------------
