@@ -1,2 +1,41 @@
-# Microsoft-Purview
+# Microsoft Purview
 Platform Overview
+
+## Table of Content:
+- ### Section 1: Using Data Classification and Sensitivity Label in Microsoft Purview
+  - Creating custom sensitive info types
+  - Document Fingerprinting
+  - Exact data match (EDM) classifiers
+  - Trainable classifiers
+  - Data explorer & content explorer for monitoring data classification
+  - Sensitive info types (STI) with Optical character recognition (OCR)
+  - Sensitivity labels
+  - Creating sensitivity labels
+  - Publishing Sensitivity labels
+  - Auto-labeling policies for sensitive labels
+  - Monitoring label usage
+  - Microsoft Defender for Cloud Apps
+  - Apply sensitivity labels in Microsoft Defender for Cloud Apps
+- ### Section 2: Using Microsoft Purview for information protection of client and data
+  - Email encryption
+  - Message encryption
+  - Advanced Message Encryption - Compliance with Microsoft Purview
+- ### Section 3: Using Data Loss Prevention (DLP) with Microsoft Purview
+  - DLP policies, roles, and permissions overview
+  - Create DLP policy
+  - Adaptive protection with DLP
+  - DLP policy and rule precedence
+  - Defender for Cloud apps to deploy DLP file policies
+  - Monitoring DLP alerts, events, and view reports
+  - DLP settings and Just-in-time (JIT) protection
+- ### Section 4: Using and maintaining retention in Microsoft Purview
+  - Understanding information retention and disposal
+  - Using adaptive labels
+  -
+  - 
+- ### Section 5: Using Insider Risk Management in Microsoft Purview
+  -
+  - 
+- ### Section 7: Using alert monitoring and protecting data used by AI services
+  -
+  -
