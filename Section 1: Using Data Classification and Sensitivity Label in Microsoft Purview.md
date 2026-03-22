@@ -51,6 +51,29 @@ https://learn.microsoft.com/en-us/purview/sit-create-a-custom-sensitive-informat
 
 ---------------------------------------------------------------------------------
 ## Document Fingerprinting
+
+Analyzing documents and building a template from those documents than then becomes a sensitive information type (SIT). 
+
+Microsoft Purview > Information Protection > Classifiers > Sensitive info types
+
+\+ Create Fingerprint based SIT
+
+	1. Name
+		- Name: Fingerprint_credit_card_info
+		- Description: Fingerprint_credit_card_info
+	2. Upload file
+		- Upload file
+		- Confidence level (ranking system) as defined by Microsoft's algorithm, can be modified as needed.
+	3. Finish
+		- Review settings and create.
+
+<img width="837" height="559" alt="image" src="https://github.com/user-attachments/assets/4a56dca5-9538-4dc9-8baf-b40b4abb3b9b" />
+
+In the Sensitive info types list search for Fingerprint_credit_card_info (type: Fingerprint)
+
+Document fingerprinting - visit Microsoft doc for more info.
+https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting
+
 ---------------------------------------------------------------------------------
 ## Exact data match (EDM) classifiers
 ---------------------------------------------------------------------------------
