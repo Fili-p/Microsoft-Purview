@@ -353,7 +353,42 @@ https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically?
 
 ---------------------------------------------------------------------------------
 ## Monitoring label usage
+
+Monitor label usage within Microsoft Purview using: Data Explorer, and Activity Explorer.
+
+Microsoft Purview > Information Protection > Explorers
+
+Data Explorer: This tool helps users search for activities related to labeled data, like sensitivity and retention labels. It's important to wait about 24 hours after performing activities for the data to populate in the explorer.
+
+Activity Explorer: This tool offers insights into all activities related to sensitive information and labels. Like Data Explorer, it requires waiting for data to populate. (Logs of all changes can be filtered by activity, location, user, label, etc.)
+
+### Microsoft Purview > Information Protection > Reports
+
+Reports: an overview dashboard for coverage and access control, provides insights and guides users to relevant areas for further exploration.
+- Posture reports on/off
+
+
 ---------------------------------------------------------------------------------
 ## Microsoft Defender for Cloud Apps
+
+Microsoft Defender for Cloud Apps main points:
+1. Functionality: It acts as a cloud access security broker, monitoring user activities to prevent unauthorized access to cloud applications.
+2. Tracking and Discovery: It generates log data, monitors user behavior, and helps prevent shadow IT by discovering unauthorized applications being used by employees, with over 16,000 SaaS applications identified.
+3. Access Control: It can function as a reverse proxy to ensure users access only their business accounts and not personal ones, enhancing security.
+4. Integration with Compliance: The tool integrates with Microsoft 365 compliance policies, aiding in managing sensitive information according to regulations such as GDPR, PCI DSS, etc.
+5. Alerts and Behavior Monitoring: It generates alerts for admins regarding potential security violations and monitors user behaviors for cyber threats.
+6. Conditional Access: The service supports conditional access app control, allowing organizations to enforce policies to restrict sharing of sensitive information outside the company.
+7. Visibility and Management: It enhances visibility into cloud usage and creates app connectors for managing sanctioned applications, with policies to detect risky behavior and provide remediation strategies.
+
 ---------------------------------------------------------------------------------
 ## Apply sensitivity labels in Microsoft Defender for Cloud Apps
+
+Microsoft 365 admin center > Security (Microsoft Defender) > Cloud apps > Policies > Policy management
+
+\+ Create policy > File policy (apply sensitivity label)
+
+File policies in Microsoft Defender for Cloud Apps - https://learn.microsoft.com/en-us/defender-cloud-apps/data-protection-policies#:~:text=To%20create%20a%20new%20file,policy%20and%20select%20File%20policy.
+
+
+
+
