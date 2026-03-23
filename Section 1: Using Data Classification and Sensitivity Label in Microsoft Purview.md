@@ -187,9 +187,6 @@ In the event that a sensitivity label is applied to an email or document, any pr
 - Protect data by encrypting emails and documents. It is also possible to restrict what actions users or groups are allowed to perform, as well as for how long. 
 - Mark the content of an email or document by adding a watermark, header, or footer when using Office apps. Emails cannot be watermarked.
 
-<img width="1279" height="720" alt="image" src="https://github.com/user-attachments/assets/7afe2f8a-f534-42ec-8615-0e5c21084d02" />
-<img width="1279" height="720" alt="image" src="https://github.com/user-attachments/assets/55b70f4a-bdce-48e1-a90f-eb45707489b4" />
-
 ### Microsoft Purview > Settings > Roles and scopes 
 
 Microsoft Entra ID: List of existing roles and assigned users.
