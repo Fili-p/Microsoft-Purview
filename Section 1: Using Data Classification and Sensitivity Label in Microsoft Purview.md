@@ -158,7 +158,7 @@ Microsoft Purview > Information Protection > Explorers
 ---------------------------------------------------------------------------------
 ## Sensitive info types (STI) with Optical character recognition (OCR)
 
-Example use case - scan PDF files for sensitive information. Supported locations includes Echange, SharePoint sites, OneDrive accounts, Teams chat and channel messages, and Devices.
+Example use case - scan PDF files for sensitive information. Supported locations includes Exchange, SharePoint sites, OneDrive accounts, Teams chat and channel messages, and Devices.
 
 Perquisite: pay-as-you-go subscription - https://learn.microsoft.com/en-us/purview/ocr-cost-estimator
 
