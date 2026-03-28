@@ -52,7 +52,7 @@ https://learn.microsoft.com/en-us/purview/sit-create-a-custom-sensitive-informat
 ---------------------------------------------------------------------------------
 ## Document Fingerprinting
 
-Analyzing documents and building a template from those documents than then becomes a sensitive information type (SIT). 
+Analyzing documents and building a template from those documents that then becomes a sensitive information type (SIT). 
 
 Microsoft Purview > Information Protection > Classifiers > Sensitive info types
 
