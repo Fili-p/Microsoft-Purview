@@ -53,6 +53,7 @@ Settings > Roles and scopes > Adaptive scopes
 <img width="1662" height="540" alt="image" src="https://github.com/user-attachments/assets/17a5cc9a-9a62-4d81-ae52-e947e3f16b7d" />
 
 Adaptive scopes - https://learn.microsoft.com/en-us/purview/purview-adaptive-scopes
+
 -----------------------------------------------------------------
 
 ## Creating retention labels
@@ -88,7 +89,8 @@ Microsoft Purview > Data Lifecycle Management >  Retention labels
 
 <img width="1665" height="648" alt="image" src="https://github.com/user-attachments/assets/629435f9-0123-4ef0-b9ca-09d01356a329" />
 
-Learn about retention policies and retention labels https://learn.microsoft.com/en-us/purview/retention?tabs=table-overriden
+Learn about retention policies and retention labels - https://learn.microsoft.com/en-us/purview/retention?tabs=table-overriden
+
 -----------------------------------------------------------------
 
 ## Publishing a retention label using a label policy
@@ -116,8 +118,8 @@ May take up to 24hrs to deploy.
 
 <img width="1605" height="570" alt="image" src="https://github.com/user-attachments/assets/5d299796-5cf7-4ebe-8aaa-a491ce88f261" />
 
-Publish retention labels and apply them in apps
-https://learn.microsoft.com/en-us/purview/create-apply-retention-labels?tabs=manual-outlook%2Cdefault-label-for-sharepoint
+Publish retention labels and apply them in apps - https://learn.microsoft.com/en-us/purview/create-apply-retention-labels?tabs=manual-outlook%2Cdefault-label-for-sharepoint
+
 -----------------------------------------------------------------
 
 ## Auto-apply labels for retention
@@ -165,16 +167,14 @@ May take up to 7 days to deployed.
 
 <img width="1608" height="629" alt="image" src="https://github.com/user-attachments/assets/d49dec99-a814-4ed0-b358-ec02d373838d" />
 
-Automatically apply a retention label to retain or delete content
-https://learn.microsoft.com/en-us/purview/apply-retention-labels-automatically
+Automatically apply a retention label to retain or delete content - https://learn.microsoft.com/en-us/purview/apply-retention-labels-automatically
 -----------------------------------------------------------------
 
 ## Retention policies precedence & conflict
 
 <img width="520" height="481" alt="image" src="https://github.com/user-attachments/assets/ce151eaa-ba23-4cb3-b03c-9e95fa17ee71" />
 
-Learn about retention policies and retention labels
-https://learn.microsoft.com/en-us/purview/retention?tabs=table-overriden
+Learn about retention policies and retention labels - https://learn.microsoft.com/en-us/purview/retention?tabs=table-overriden
 -----------------------------------------------------------------
 ## Creating a retention policy
 Microsoft Purview > Data Lifecycle Management > Policies > Retention policies 
