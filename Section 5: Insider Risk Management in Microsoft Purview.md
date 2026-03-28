@@ -73,14 +73,147 @@ An insider risk management workflow assists you in identifying, investigating, a
 
 
 Learn about Insider Risk Management - https://learn.microsoft.com/en-us/purview/insider-risk-management 
+
 ---------------------------------------------------------
 
+## Insider Risk Management Connectors
+
+Data Connectors: gather information from third-party services to improve insider risk management.
+
+Connector Capabilities: different types of connectors are available, supporting insider risk management and other functionalities like eDiscovery.
+
+Settings > Data Connectors > All Connectors 
+
+Learn about connectors for third-party data - https://learn.microsoft.com/en-us/purview/archive-third-party-data
+
+---------------------------------------------------------
+
+## Managing Insider Risk Management settings
+
+Managing insider risk within Microsoft Purview settings summary:
+1. Analytics: Enable analytics to analyze activities related to insider risk policies (tenant and user levels).
+2. Data Sharing: Exporting data to SIEM systems and sharing user risk details with Microsoft solutions like data loss prevention and Microsoft Defender.
+3. Detected Groups: Defining groups to focus detection efforts on and create exceptions for specific activities.
+4. Global Exclusions: Settings that allow exclusions of certain domains, file types, or criteria from detection policies.
+5. Inline Alert Customization: Offers the ability to customize alert settings for better management.
+6. Intelligent Detections: A scoring system is introduced for assessing user activities and determining risk levels.
+7. Microsoft Teams Integration: Integration of insider risk management with Teams.
+8. Policy Time Frames: Allows users to set time frames for recording activities relevant to insider risk policies.
+9. Power Automate: automate processes related to insider risk management.
+10. Priority User Groups: Defining user groups for closer monitoring based on access levels and past risk.
+11. Privacy Considerations: Methods to handle user identities respectfully, using pseudonyms for users triggering risk policies.
 
 
+Settings > Insider Risk Management
 
 
+Learn about Insider Risk Management settings - https://learn.microsoft.com/en-us/purview/insider-risk-management-settings
+
+---------------------------------------------------------
+
+## Managing the settings for policy indicators
+
+Configure policy indicators in Insider Risk Management - https://learn.microsoft.com/en-us/purview/insider-risk-management-settings-policy-indicators
+
+---------------------------------------------------------
+## Policy templates
+
+Learn about Insider Risk Management policy templates - https://learn.microsoft.com/en-us/purview/insider-risk-management-policy-templates
+
+---------------------------------------------------------
+
+## Creating Insider Risk Management policies
+
+Microsoft Purview > Insider Risk Management > Policies
+
+Two options available quick policy and custom.
+
+Quick policy - preconfigured settings to set up a policy based on common insider risk scenarios (data leak, data theft, risky AI usage, etc.)
+
+\+ Create policy > Custom policy
+
+	1. Policy template
+		- Choose template:
+			- Data leaks
+			- Perquisite: DLP policy (optional)
+	2. Name and description
+		- Name: Data Leakage 
+		- Description:
+	3. Users and groups
+		- Options:
+			- All users, groups, and adaptive scopes (selected option)
+			- Specific users, groups, and adaptive scopes
+		- Exclude users and groups (optional)
+	4. Content to prioritize
+		- Options:
+			- Prioritize content (options)
+				- SharePoint sites
+				- Sensitivity labels (selected option)
+				- Sensitive info types (selected option)
+				- File Extensions
+				- Trainable classifiers
+			- Don’t prioritize content right now (setup once policy is created)
+		- Sensitivity labels (can add multiple)
+			- Add label: Top Secret Data
+		- Sensitive info types (can add multiple)
+			- Add SIT: 
+		- Decide whether to score only activity with priority content
+			- Options:
+				- Get alerts for all activity
+				- Get alerts only for activity that includes priority content
+	5. Triggering events
+		- Options:
+			- User matches a DLP policy (up to 20)
+			- User performs an exfiltration activity (multiple activity options) 
+		- Thresholds for triggering events
+			- Apply built-in thresholds (recommended) 
+			- Choose your own
+	6. Indicators
+		- Select indicators used to generate alerts
+		- Detection options (multiple advanced ML & settings to configure)
+			- Sequence detection
+			- Cumulative exfiltration detection
+			- Risk score boosters
+		- Choose threshold type for indicators
+			- Apply thresholds provided by Microsoft
+			- Apply thresholds specific to your users' activity
+			- Choose your own thresholds
+	7. Finish
+	
+Stay updated (options) choose what emails to receive for alerts:
+- When a new policy generates its first alert
+- When new high severity alerts are generated
+- Weekly email summarizing policies that have unresolved warnings
 
 
+<img width="1664" height="1259" alt="image" src="https://github.com/user-attachments/assets/937dcc4e-27e0-442d-a876-bcc65eabebc7" />
+
+Create and manage Insider Risk Management policies - https://learn.microsoft.com/en-us/purview/insider-risk-management-policies
+
+---------------------------------------------------------
+
+## Working with forensic evidence settings
+
+Microsoft Purview > Insider Risk Management > Users > Forensic Evidence
+
+Off by default, capture user activity to help determine whether the user's actions pose a risk.
+
+Capacity 20GB free, more storage will inquire additional costs.
+
+Manage Insider Risk Management forensic evidence - https://learn.microsoft.com/en-us/purview/insider-risk-management-forensic-evidence-manage#capacity-and-billing
+
+---------------------------------------------------------
+
+## Managing insider risk level for Adaptive Protection
+
+Microsoft Purview > Insider Risk Management > Users > Adaptive Protection
+
+Adaptive protection in Microsoft Purview uses machine learning to identify the most critical risks and proactively and dynamically apply protection controls from:
+- Microsoft Purview Data Loss Prevention (DLP)
+- Microsoft Purview Data Lifecycle Management (preview)
+- Microsoft Entra Conditional Access (preview)
+
+Dynamically mitigate risks with Adaptive Protection - https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection
 
 
 
