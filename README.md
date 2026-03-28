@@ -31,8 +31,12 @@ Platform Overview
 - ### Section 4: Using and maintaining retention in Microsoft Purview
   - Understanding information retention and disposal
   - Using adaptive labels
-  -
-  - 
+  - Creating retention labels
+  - Publishing a retention label using a label policy
+  - Auto-apply labels for retention
+  - Retention policies precedence & conflict
+  - Creating a retention policy
+  - Concepts for recovering  retained content in M365
 - ### Section 5: Using Insider Risk Management in Microsoft Purview
   -
   - 
