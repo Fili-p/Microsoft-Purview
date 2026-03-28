@@ -79,7 +79,7 @@ Then:
 - Exchange trace :
   - Rules triggered 
 
-Why both exist - key concept:
+Why both exist - key concept - 
 Microsoft separates:
 1. Encryption alone
 	- Just protect the message
