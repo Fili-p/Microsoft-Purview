@@ -65,7 +65,7 @@ Add your organization's brand to your Microsoft Purview Message Encryption encry
 
 _____________________________________________
 
-Setup maps
+Setup map - 
 If you created:
 #### - Rule 1 → Apply sensitivity label (Compliance with Purview Message Encryption)
 #### - Rule 2 → Encrypt email (Enable Purview Encryption)
