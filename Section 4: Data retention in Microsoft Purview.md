@@ -175,6 +175,7 @@ Automatically apply a retention label to retain or delete content - https://lear
 <img width="520" height="481" alt="image" src="https://github.com/user-attachments/assets/ce151eaa-ba23-4cb3-b03c-9e95fa17ee71" />
 
 Learn about retention policies and retention labels - https://learn.microsoft.com/en-us/purview/retention?tabs=table-overriden
+
 -----------------------------------------------------------------
 ## Creating a retention policy
 Microsoft Purview > Data Lifecycle Management > Policies > Retention policies 
