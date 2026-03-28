@@ -8,7 +8,7 @@ Platform Overview
   - Exact data match (EDM) classifiers
   - Trainable classifiers
   - Data explorer & content explorer for monitoring data classification
-  - Sensitive info types (STI) with Optical character recognition (OCR)
+  - Sensitive info types (SITs) with Optical character recognition (OCR)
   - Sensitivity labels
   - Creating sensitivity labels
   - Publishing Sensitivity labels
