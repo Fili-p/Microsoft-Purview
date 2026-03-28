@@ -38,8 +38,14 @@ Platform Overview
   - Creating a retention policy
   - Concepts for recovering  retained content in M365
 - ### Section 5: Insider Risk Management in Microsoft Purview
-  -
-  - 
+  - Understanding Insider Risk Management in M365
+  - Insider Risk Management Connectors
+  - Managing Insider Risk Management settings
+  - Managing the settings for policy indicators
+  - Policy templates
+  - Creating Insider Risk Management policies
+  - Working with forensic evidence settings
+  - Managing insider risk level for Adaptive Protection
 - ### Section 6: Alerts, Monitoring, and protecting data used by AI services
   -
   -
