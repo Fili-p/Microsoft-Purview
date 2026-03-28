@@ -100,8 +100,7 @@ Important: If there is an insider threat they will find a way to steal and leak 
   5. Administration Guidance: navigating to Microsoft admin portal to manage these roles, including assigning and creating custom roles.
 
 
-Data governance roles and permissions in Microsoft Purview
-https://learn.microsoft.com/en-us/purview/data-governance-roles-permissions
+Data governance roles and permissions in Microsoft Purview - https://learn.microsoft.com/en-us/purview/data-governance-roles-permissions
 
 ----------------------------------------------------------------------------------
 
@@ -180,7 +179,7 @@ Adaptive Protection advantages:
 
 Microsoft Purview > Insider Risk Management > Users > Adaptive Protection
 
-Learn about Adaptive Protection in Data Loss Prevention https://learn.microsoft.com/en-us/purview/dlp-adaptive-protection-learn
+Learn about Adaptive Protection in Data Loss Prevention - https://learn.microsoft.com/en-us/purview/dlp-adaptive-protection-learn
 
 ----------------------------------------------------------------------------------
 
