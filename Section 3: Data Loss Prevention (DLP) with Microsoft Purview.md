@@ -102,6 +102,7 @@ Important: If there is an insider threat they will find a way to steal and leak 
 
 Data governance roles and permissions in Microsoft Purview
 https://learn.microsoft.com/en-us/purview/data-governance-roles-permissions
+
 ----------------------------------------------------------------------------------
 
 ## Create DLP policy
@@ -149,6 +150,7 @@ May take up to an hour before deployed
 <img width="2547" height="816" alt="image" src="https://github.com/user-attachments/assets/df5e027d-3a0c-491f-b166-1b58af475ff5" />
 
 Create and deploy data loss prevention policies - https://learn.microsoft.com/en-us/purview/dlp-create-deploy-policy
+
 ----------------------------------------------------------------------------------
 
 ## Adaptive protection with DLP
@@ -179,6 +181,7 @@ Adaptive Protection advantages:
 Microsoft Purview > Insider Risk Management > Users > Adaptive Protection
 
 Learn about Adaptive Protection in Data Loss Prevention https://learn.microsoft.com/en-us/purview/dlp-adaptive-protection-learn
+
 ----------------------------------------------------------------------------------
 
 ## DLP policy and rule precedence
