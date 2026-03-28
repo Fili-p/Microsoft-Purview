@@ -1,4 +1,4 @@
-# Section 1: Using Data Classification and Sensitivity Label in Microsoft Purview
+# Section 1: Data Classification and Sensitivity Label in Microsoft Purview
 ---------------------------------------------------------------------------------
 ## Creating custom sensitive info types
 
