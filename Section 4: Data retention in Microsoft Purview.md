@@ -1,4 +1,4 @@
-# Section 4: Using and maintaining retention in Microsoft Purview
+# Section 4: Data retention in Microsoft Purview
 -----------------------------------------------------------------
 
 ## Understanding information retention and disposal
