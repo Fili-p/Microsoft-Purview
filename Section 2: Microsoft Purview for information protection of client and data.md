@@ -1,4 +1,4 @@
-# Section 2: Using Microsoft Purview for information protection of client and data
+# Section 2: Microsoft Purview for information protection of client and data
 ----------------------------------------------------------------------------------
 ### Email encryption
 
