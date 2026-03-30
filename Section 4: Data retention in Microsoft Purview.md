@@ -213,7 +213,7 @@ Microsoft Purview > Data Lifecycle Management > Policies > Retention policies
 
 May take up to 7 days to deploy.
 
-<img width="1608" height="629" alt="image" src="https://github.com/user-attachments/assets/81649b9b-8b7f-43cf-a6c4-1ef5b8ddfbd6" />
+<img width="1605" height="562" alt="image" src="https://github.com/user-attachments/assets/2465741a-34db-423f-a3c2-060c585eeb7b" />
 
 -----------------------------------------------------------------
 
